@@ -1,0 +1,14 @@
+.header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    padding: 2rem;
+  }
+  &__nav-lists {
+    display: flex;
+    gap: 3rem;
+  }
+}
