@@ -9,12 +9,132 @@ body {
   font-family: "Barlow", sans-serif; }
 
 .header {
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .header__nav {
-    padding: 2rem; }
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .header__logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 4rem 2.5rem 2.5rem;
+    margin-bottom: 4rem; }
+  .header__logo {
+    height: 2rem; }
   .header__nav-lists {
     display: flex;
-    gap: 3rem; }
+    align-items: center;
+    gap: 2.75rem;
+    list-style: none; }
+  .header__nav-links:link, .header__nav-links:visited {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem; }
+  .header__cta-btn:link, .header__cta-btn:visited {
+    color: #23303e;
+    background-color: white;
+    padding: 1rem 1.75rem;
+    border-radius: 10rem;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .header__heading {
+    color: white;
+    font-family: "Fraunces", sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.75rem;
+    margin-bottom: 5rem; }
+  .header__img-container {
+    display: flex;
+    justify-content: center; }
+  .header__img {
+    text-align: center; }
+
+.section-how {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "content1 img1" "img2 content2" "content3 content4"; }
+  .section-how__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 7rem; }
+    .section-how__content-heading {
+      font-size: 3rem;
+      color: #23303e;
+      font-family: "Fraunces", sans-serif;
+      font-weight: 900; }
+    .section-how__content-text {
+      color: #5a636c;
+      font-size: 1.25rem; }
+    .section-how__content-link:link, .section-how__content-link:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.25rem;
+      color: #23303e;
+      font-family: "Fraunces", sans-serif;
+      font-weight: 900; }
+  .section-how__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .section-how__graphics-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem 9rem; }
+    .section-how__graphics-photo-heading {
+      font-size: 2.25rem;
+      font-family: "Fraunces", sans-serif;
+      font-weight: 900; }
+    .section-how__graphics-photo-text {
+      font-size: 1.25rem;
+      line-height: 1.5; }
+
+.link1 {
+  border-bottom: 0.5rem solid rgba(250, 212, 0, 0.35);
+  margin-bottom: -2rem; }
+
+.link2 {
+  border-bottom: 0.5rem solid rgba(254, 120, 103, 0.25); }
+
+.content1 {
+  grid-area: content1; }
+
+.content2 {
+  grid-area: content2; }
+
+.img1 {
+  grid-area: img1; }
+
+.img2 {
+  grid-area: img2; }
+
+.content3 {
+  grid-area: content3;
+  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -0.2rem;
+  color: #25564b; }
+
+.content4 {
+  grid-area: content4;
+  background-image: url("../../images/desktop/image-photography.jpg");
+  color: #19536b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -0.2rem; }

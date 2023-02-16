@@ -1,14 +1,67 @@
 .header {
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // height: 9rem; if want to make sticky
 
-  &__nav {
-    padding: 2rem;
+  &__logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 4rem 2.5rem 2.5rem;
+    margin-bottom: 4rem;
   }
+  &__logo {
+    height: 2rem;
+  }
+
   &__nav-lists {
     display: flex;
-    gap: 3rem;
+    align-items: center;
+    gap: 2.75rem;
+
+    list-style: none;
+  }
+
+  &__nav-links:link,
+  &__nav-links:visited {
+    display: inline-block;
+
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  &__cta-btn:link,
+  &__cta-btn:visited {
+    color: $color-very-dark-desaturated-blue;
+    background-color: $color-white;
+    padding: 1rem 1.75rem;
+    border-radius: 10rem;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    color: $color-white;
+    font-family: "Fraunces", sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.75rem;
+    margin-bottom: 5rem;
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    text-align: center;
   }
 }
