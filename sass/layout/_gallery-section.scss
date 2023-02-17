@@ -1,0 +1,30 @@
+.gallery {
+  max-width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "img1 img2 img3 img4";
+
+  &__img-container {
+    &1 {
+      grid-area: img1;
+    }
+
+    &2 {
+      grid-area: img2;
+    }
+
+    &3 {
+      grid-area: img3;
+    }
+
+    &4 {
+      grid-area: img4;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}

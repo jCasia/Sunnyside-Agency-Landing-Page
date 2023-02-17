@@ -1,4 +1,5 @@
 .section-how {
+  max-width: 100vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -25,6 +26,7 @@
     &-text {
       color: $color-very-dark-grayish-blue;
       font-size: 1.25rem;
+      line-height: 1.5;
     }
 
     &-link:link,
@@ -68,10 +70,22 @@
 .link1 {
   border-bottom: 0.5rem solid rgba($color-yellow, 0.35);
   margin-bottom: -2rem;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    border-bottom: 0.5rem solid $color-yellow;
+  }
 }
 
 .link2 {
   border-bottom: 0.5rem solid rgba($color-soft-red, 0.25);
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    border-bottom: 0.5rem solid $color-soft-red;
+  }
 }
 
 .content1 {
