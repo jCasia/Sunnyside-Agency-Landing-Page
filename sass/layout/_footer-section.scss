@@ -1,0 +1,55 @@
+.footer {
+  background-color: rgb(144, 212, 197);
+  padding: 4rem 0;
+
+  display: flex;
+  justify-content: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__logo {
+      height: 2rem;
+      align-self: center;
+    }
+
+    &__nav {
+      margin-bottom: 2.75rem;
+    }
+    &__nav-lists {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 3.5rem;
+    }
+
+    &__nav-link {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-dark-moderate-cyan;
+      transition: all 0.3s;
+
+      &:hover,
+      &:active {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__social-nav {
+    &-lists {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+    }
+
+    &-link {
+    }
+
+    &-icon {
+    }
+  }
+}
