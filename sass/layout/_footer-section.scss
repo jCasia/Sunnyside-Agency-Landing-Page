@@ -1,7 +1,6 @@
 .footer {
   background-color: rgb(144, 212, 197);
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  padding: 4.5rem 0;
 
   display: flex;
   justify-content: center;
@@ -9,7 +8,7 @@
   &-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 
     &__logo {
       height: 2rem;
@@ -33,7 +32,7 @@
       display: inline-block;
       text-decoration: none;
       color: $color-dark-moderate-cyan;
-      transition: all 0.3s;
+      transition: $hover-transition;
 
       &:hover,
       &:active {
@@ -47,13 +46,11 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
-    }
-
-    &-link {
+      gap: 2rem;
     }
 
     &-icon {
+      transition: $hover-transition;
       &:hover,
       &:active {
         filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(285deg)

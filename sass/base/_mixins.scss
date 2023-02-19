@@ -8,3 +8,16 @@
   font-family: $font-family-Fraunces;
   font-weight: 900;
 }
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == first-breakpoint {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == second-breakpoint {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+}

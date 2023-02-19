@@ -5,7 +5,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  // height: 9rem; if want to make sticky
 
   &__logo-nav-container {
     display: flex;
@@ -16,6 +15,12 @@
   }
   &__logo {
     height: 2rem;
+  }
+
+  &__nav {
+    @include responsive(second-breakpoint) {
+      display: none;
+    }
   }
 
   &__nav-lists {
@@ -33,6 +38,10 @@
     color: $color-white;
     text-decoration: none;
     font-size: 1.1rem;
+
+    @include responsive(first-breakpoint) {
+      font-size: 0.9rem;
+    }
   }
 
   &__cta-btn:link,
@@ -45,7 +54,7 @@
 
     text-transform: uppercase;
 
-    transition: all 0.3s;
+    transition: $hover-transition;
   }
 
   &__cta-btn:hover,
@@ -62,6 +71,10 @@
     text-align: center;
     letter-spacing: 0.75rem;
     margin-bottom: 5rem;
+
+    @include responsive(first-breakpoint) {
+      font-size: 2.75rem;
+    }
   }
 
   &__img-container {
@@ -71,5 +84,11 @@
 
   &__img {
     text-align: center;
+  }
+}
+
+.hidden {
+  display: none;
+  @include responsive(second-breakpoint) {
   }
 }

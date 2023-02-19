@@ -5,6 +5,13 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "img1 img2 img3 img4";
 
+  @include responsive(first-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "img1 img2"
+      "img3 img4";
+  }
+
   &__img-container {
     &1 {
       grid-area: img1;
