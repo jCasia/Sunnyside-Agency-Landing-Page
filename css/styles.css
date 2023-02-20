@@ -95,17 +95,17 @@ body {
       .header__logo {
         height: 1.5rem; } }
   @media only screen and (max-width: 48em) {
-    .header__nav {
+    .header__navigation {
       display: none; } }
-  .header__nav-lists {
+  .header__navigation-lists {
     display: flex;
     align-items: center;
     gap: 2.75rem;
     list-style: none; }
     @media only screen and (max-width: 68.75em) {
-      .header__nav-lists {
+      .header__navigation-lists {
         gap: 2rem; } }
-  .header__nav-links:link, .header__nav-links:visited {
+  .header__navigation-links:link, .header__navigation-links:visited {
     display: inline-block;
     color: white;
     text-decoration: none;

@@ -26,13 +26,13 @@
     }
   }
 
-  &__nav {
+  &__navigation {
     @include responsive(second-breakpoint) {
       display: none;
     }
   }
 
-  &__nav-lists {
+  &__navigation-lists {
     display: flex;
     align-items: center;
     gap: 2.75rem;
@@ -43,8 +43,8 @@
     }
   }
 
-  &__nav-links:link,
-  &__nav-links:visited {
+  &__navigation-links:link,
+  &__navigation-links:visited {
     display: inline-block;
 
     color: $color-white;
