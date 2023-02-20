@@ -52,7 +52,8 @@ body {
     font-size: 1.4rem; }
     @media only screen and (max-width: 26.5625em) {
       .mobile-nav-links:link, .mobile-nav-links:visited {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        visibility: hidden; } }
   .mobile-nav-cta-btn:link, .mobile-nav-cta-btn:visited {
     color: #23303e;
     background-color: #fad400;
@@ -244,6 +245,9 @@ body {
     @media only screen and (max-width: 34.375em) {
       .section-how__graphics-photo {
         padding: 0 1rem 1rem 1rem; } }
+    @media only screen and (max-width: 26.5625em) {
+      .section-how__graphics-photo {
+        gap: 1rem; } }
     .section-how__graphics-photo-heading {
       font-size: 2.25rem;
       font-family: "Fraunces", sans-serif;
@@ -445,6 +449,9 @@ body {
       justify-content: center;
       gap: 3.75rem;
       font-size: 1.1rem; }
+      @media only screen and (max-width: 26.5625em) {
+        .footer-container__nav-lists {
+          gap: 2rem; } }
     .footer-container__nav-link {
       display: inline-block;
       text-decoration: none;

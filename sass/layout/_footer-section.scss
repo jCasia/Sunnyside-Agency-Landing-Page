@@ -26,6 +26,10 @@
       justify-content: center;
       gap: 3.75rem;
       font-size: 1.1rem;
+
+      @include responsive(fourth-breakpoint) {
+        gap: 2rem;
+      }
     }
 
     &__nav-link {
