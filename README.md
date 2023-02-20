@@ -21,3 +21,8 @@ My first junior level challenge where I had to make a landing page which consist
 
 For css clip-path: [CSS clip-path maker](https://bennettfeely.com/clippy/)
 For filter generator: [Using filter generator on svg](https://codepen.io/sosuke/pen/Pjoqqp)
+
+### Some screenshot of this project:
+
+![](./images/desktop-view.png)
+![](./images/mobile-view.png)
