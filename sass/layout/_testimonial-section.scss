@@ -7,11 +7,14 @@
     letter-spacing: 0.5rem;
     font-size: 1.25rem;
     text-align: center;
-    padding-top: 8rem;
+    margin-top: 8rem;
 
     @include fraunces;
     @include responsive(first-breakpoint) {
-      padding-top: 5rem;
+      margin-top: 5rem;
+    }
+    @include responsive(third-breakpoint) {
+      font-size: 1rem;
     }
   }
   &__cards {
@@ -23,6 +26,13 @@
     padding: 1rem 9rem 5rem 9rem;
     @include responsive(first-breakpoint) {
       padding: 1rem 4rem 5rem 4rem;
+      gap: 0;
+    }
+    @include responsive(second-breakpoint) {
+      flex-direction: column;
+    }
+    @include responsive(third-breakpoint) {
+      padding: 0 1rem 5rem 1rem;
     }
   }
   &__card {
@@ -39,6 +49,10 @@
       padding-bottom: 0;
     }
 
+    @include responsive(second-breakpoint) {
+      gap: 2rem;
+    }
+
     &-img {
       border-radius: 50%;
       height: 5rem;
@@ -52,6 +66,15 @@
       @include responsive(first-breakpoint) {
         font-size: 1rem;
       }
+      @include responsive(second-breakpoint) {
+        font-size: 1.2rem;
+      }
+      @include responsive(third-breakpoint) {
+        font-size: 1rem;
+      }
+      @include responsive(fourth-breakpoint) {
+        font-size: 0.9rem;
+      }
     }
 
     &-name {
@@ -59,11 +82,21 @@
       font-size: 1.2rem;
       margin-bottom: -3rem;
       @include fraunces;
+      @include responsive(second-breakpoint) {
+        margin-bottom: -1rem;
+
+        @include responsive(fourth-breakpoint) {
+          font-size: 1rem;
+        }
+      }
     }
 
     &-title {
       color: $color-grayish-blue;
       font-size: 0.9rem;
+      @include responsive(fourth-breakpoint) {
+        font-size: 0.75rem;
+      }
     }
   }
 }

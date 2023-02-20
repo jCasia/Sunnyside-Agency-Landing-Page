@@ -20,4 +20,15 @@
       @content;
     }
   }
+  @if $breakpoint == third-breakpoint {
+    @media only screen and (max-width: 34.375em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == fourth-breakpoint {
+    @media only screen and (max-width: 26.5625em) {
+      @content;
+    }
+  }
 }

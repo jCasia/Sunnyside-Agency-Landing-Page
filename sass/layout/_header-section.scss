@@ -12,9 +12,18 @@
     align-items: center;
     padding: 2.5rem 4rem 2.5rem 2.5rem;
     margin-bottom: 4rem;
+
+    @include responsive(fourth-breakpoint) {
+      padding: 2rem 1.5rem 0 1.5rem;
+      margin-bottom: 7rem;
+    }
   }
   &__logo {
     height: 2rem;
+
+    @include responsive(fourth-breakpoint) {
+      height: 1.5rem;
+    }
   }
 
   &__nav {
@@ -29,6 +38,9 @@
     gap: 2.75rem;
 
     list-style: none;
+    @include responsive(first-breakpoint) {
+      gap: 2rem;
+    }
   }
 
   &__nav-links:link,
@@ -38,10 +50,6 @@
     color: $color-white;
     text-decoration: none;
     font-size: 1.1rem;
-
-    @include responsive(first-breakpoint) {
-      font-size: 0.9rem;
-    }
   }
 
   &__cta-btn:link,
@@ -71,9 +79,18 @@
     text-align: center;
     letter-spacing: 0.75rem;
     margin-bottom: 5rem;
+    padding: 0 4rem;
 
     @include responsive(first-breakpoint) {
       font-size: 2.75rem;
+    }
+    @include responsive(third-breakpoint) {
+      padding: 0;
+    }
+
+    @include responsive(fourth-breakpoint) {
+      font-size: 2rem;
+      padding: 0 0.5rem;
     }
   }
 
@@ -84,11 +101,5 @@
 
   &__img {
     text-align: center;
-  }
-}
-
-.hidden {
-  display: none;
-  @include responsive(second-breakpoint) {
   }
 }

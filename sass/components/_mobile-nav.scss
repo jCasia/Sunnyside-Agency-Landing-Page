@@ -1,0 +1,79 @@
+.mobile-nav {
+  position: absolute;
+  top: 2.25rem;
+  right: 3rem;
+  z-index: 99;
+  width: 80%;
+
+  @include responsive(fourth-breakpoint) {
+    top: 2rem;
+    right: 1.75rem;
+  }
+
+  &-toggle {
+    font-size: 2.5rem;
+    color: $color-white;
+    align-self: flex-end;
+    @include responsive(fourth-breakpoint) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &-content {
+    background-color: $color-white;
+    clip-path: polygon(85% 8%, 100% 0%, 100% 90%, 0 90%, 0 8%);
+    padding: 6rem 0;
+    width: 100%;
+
+    display: none;
+
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-lists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  &-links:link,
+  &-links:visited {
+    display: inline-block;
+
+    color: $color-dark-grayish-blue;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    @include responsive(fourth-breakpoint) {
+      font-size: 1rem;
+    }
+  }
+
+  &-cta-btn:link,
+  &-cta-btn:visited {
+    color: $color-very-dark-desaturated-blue;
+    background-color: $color-yellow;
+    font-family: $font-family-Fraunces;
+    padding: 1.25rem 1.75rem;
+    border-radius: 10rem;
+  }
+}
+
+.hidden {
+  display: none;
+  @include responsive(second-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.open {
+  display: flex;
+}
