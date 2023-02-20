@@ -200,14 +200,14 @@
 }
 .content3 {
   grid-area: content3;
-  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  background-image: url("../images/desktop/image-graphic-design.jpg");
   @include bstyle;
   color: $color-dark-saturated-cyan;
 }
 
 .content4 {
   grid-area: content4;
-  background-image: url("../../images/desktop/image-photography.jpg");
+  background-image: url("../images/desktop/image-photography.jpg");
   color: $color-dark-blue;
   @include bstyle;
 }

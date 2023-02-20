@@ -75,7 +75,7 @@ body {
 .header {
   max-width: 100vw;
   min-height: 100vh;
-  background-image: url("../../images/desktop/image-header.jpg");
+  background-image: url("../images/desktop/image-header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -307,7 +307,7 @@ body {
 
 .content3 {
   grid-area: content3;
-  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  background-image: url("../images/desktop/image-graphic-design.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -315,7 +315,7 @@ body {
 
 .content4 {
   grid-area: content4;
-  background-image: url("../../images/desktop/image-photography.jpg");
+  background-image: url("../images/desktop/image-photography.jpg");
   color: #19536b;
   background-repeat: no-repeat;
   background-position: center;
