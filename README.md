@@ -25,4 +25,4 @@ For filter generator: [Using filter generator on svg](https://codepen.io/sosuke/
 ### Some screenshot of this project:
 
 ![](./images/desktop-view.png)
-![](./images/mobile-view.png)
+
