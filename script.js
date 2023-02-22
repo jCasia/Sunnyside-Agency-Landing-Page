@@ -3,6 +3,7 @@
 const navIcon = document.querySelector(".mobile-nav-toggle");
 const navContent = document.querySelector(".mobile-nav-content");
 const navLinks = document.querySelectorAll(".mobile-nav-links");
+const arrow = document.querySelector(".header__img");
 
 navIcon.addEventListener("click", () => {
   gsap.fromTo(
@@ -17,4 +18,14 @@ navIcon.addEventListener("click", () => {
     navIcon.classList.replace("fa-xmark", "fa-bars");
   }
   navContent.classList.toggle("open");
+});
+
+gsap.to(arrow, {
+  keyframes: [
+    { y: -30, duration: 1.5 },
+    { y: 0, duration: 1.5 },
+    { y: -30, duration: 1.5 },
+    { y: 0, duration: 1.5 },
+  ],
+  repeat: Infinity,
 });
