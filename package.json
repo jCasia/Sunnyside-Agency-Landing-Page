@@ -4,7 +4,7 @@
   "description": "Landing page for sunnyside agency",
   "main": "script.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss styles.css -w"
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
   "author": "Jethier",
   "license": "ISC",
