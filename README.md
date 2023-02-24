@@ -6,7 +6,7 @@ My first junior level challenge where I had to make a landing page which consist
 
 ### Links
 
-- The Live Site URL for this project: [Click here](https://jcasia.github.io/Sunnyside-Agency-Landing-Page/)
+- The Live Site URL for this project: [Click here](https://jcasia-sunnyside-agency-landing-page.netlify.app/)
 - My Frontend Mentor Username - [@jCasia](https://www.frontendmentor.io/profile/jCasia)
 
 ### I built this project using:
@@ -25,4 +25,3 @@ For filter generator: [Using filter generator on svg](https://codepen.io/sosuke/
 ### Some screenshot of this project:
 
 ![](./images/desktop-view.png)
-
